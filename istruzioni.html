@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="t_guide">Istruzioni di configurazione · iSugar</title>
+<meta name="description" content="Guida passo passo per configurare iSugar: requisiti, collegamento Wi-Fi, account e soluzione dei problemi più comuni.">
+<meta name="theme-color" content="#0d2433">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d2433'/%3E%3Cpath d='M32 12c-8 11-14 18-14 26a14 14 0 0028 0c0-8-6-15-14-26z' fill='%232fd6a8'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo">iSugar</a>
+    <div class="nav-links">
+      <a href="index.html#come-funziona" data-i18n="nav_how">Come funziona</a>
+      <a href="istruzioni.html" class="keep active" data-i18n="nav_guide">Istruzioni</a>
+      <a href="index.html#acquista" data-i18n="nav_buy">Acquista</a>
+      <div class="lang"><button data-lang="it">IT</button><button data-lang="en">EN</button></div>
+    </div>
+  </div>
+</header>
+
+<main class="guide">
+  <div class="wrap narrow">
+    <div class="page-hero">
+      <span class="eyebrow" data-i18n="g_eyebrow">Guida di configurazione</span>
+      <h1 data-i18n="g_title">Configura il tuo iSugar.</h1>
+      <p class="lede" data-i18n="g_lede">Ci vogliono circa 5 minuti. Tieni a portata di mano lo smartphone, la password del Wi‑Fi di casa e i dati del tuo account.</p>
+      <nav class="toc">
+        <a href="#prima" data-i18n="toc1">Prima di iniziare</a>
+        <a href="#configurazione" data-i18n="toc2">Configurazione</a>
+        <a href="#display" data-i18n="toc3">Leggere il display</a>
+        <a href="#problemi" data-i18n="toc4">Problemi comuni</a>
+        <a href="#sicurezza" data-i18n="toc5">Sicurezza</a>
+      </nav>
+      <button class="btn btn-ghost print-btn" onclick="window.print()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        <span data-i18n="print">Stampa o salva in PDF</span>
+      </button>
+    </div>
+
+    <!-- PRIMA DI INIZIARE -->
+    <section id="prima">
+      <h2 data-i18n="p_title">Prima di iniziare</h2>
+      <div class="checklist">
+        <div class="check"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0M2 9a15 15 0 0120 0"/><circle cx="12" cy="19.5" r="1"/></svg></span><div><h3 data-i18n="p1">Wi‑Fi a 2,4 GHz</h3><p data-i18n="p1d">iSugar non supporta le reti a 5 GHz. La maggior parte dei router offre entrambe: usa quella a 2,4 GHz.</p></div></div>
+        <div class="check"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg></span><div><h3 data-i18n="p2">Account LibreLinkUp attivo</h3><p data-i18n="p2d">iSugar legge i dati come un "follower" tramite LibreLinkUp. Vedi i passaggi qui sotto.</p></div></div>
+        <div class="check"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></span><div><h3 data-i18n="p3">Uno smartphone</h3><p data-i18n="p3d">Serve solo per la configurazione, con la fotocamera per leggere il QR code.</p></div></div>
+        <div class="check"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10M8 6h8v6a4 4 0 01-8 0zM12 16v6"/></svg></span><div><h3 data-i18n="p4">Alimentazione USB</h3><p data-i18n="p4d">Il cavo incluso e una presa USB 5V: PC, alimentatore da parete o power bank.</p></div></div>
+      </div>
+
+      <h3 style="margin:30px 0 8px" data-i18n="llu_t">Come attivare LibreLinkUp (una sola volta)</h3>
+      <ol class="substeps">
+        <li data-i18n="llu1">Sul telefono della persona che porta il sensore, apri l'app <b>FreeStyle Libre</b> e vai nella sezione di condivisione: <b>App collegate → LibreLinkUp</b>.</li>
+        <li data-i18n="llu2">Tocca <b>Aggiungi connessione</b> e inserisci un indirizzo email (il tuo o quello di un familiare).</li>
+        <li data-i18n="llu3">Scarica l'app <b>LibreLinkUp</b> e registrati con quella stessa email.</li>
+        <li data-i18n="llu4">Accetta l'invito e verifica che nell'app LibreLinkUp compaia il valore glicemico.</li>
+      </ol>
+      <div class="callout" data-i18n="llu_note">💡 Le credenziali da inserire in iSugar sono <b>email e password dell'account LibreLinkUp</b>. Se riesci ad accedere all'app LibreLinkUp e vedi il valore, iSugar funzionerà.</div>
+    </section>
+
+    <!-- CONFIGURAZIONE -->
+    <section id="configurazione">
+      <h2 data-i18n="c_title2">Configurazione passo passo</h2>
+
+      <div class="gstep">
+        <div class="gnum">1</div>
+        <div>
+          <h3 data-i18n="g1">Accendi iSugar</h3>
+          <p data-i18n="g1d">Collega il cavo USB a iSugar e alla presa. Al primo avvio entra in <b>modalità configurazione</b> e mostra sullo schermo il nome di una rete Wi‑Fi, la sua password e un QR code.</p>
+          <div class="screen-mock">
+            <b data-i18n="mock_t">Modalità configurazione attiva</b>
+            <div data-i18n="mock_d">Connettiti alla rete Wi‑Fi indicata per procedere.</div>
+            <div class="f"><span data-i18n="mock_net">Rete</span><span data-i18n="mock_ssid">come sullo schermo</span></div>
+            <div class="f"><span data-i18n="mock_url">Indirizzo</span><span>192.168.4.1</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gstep">
+        <div class="gnum">2</div>
+        <div>
+          <h3 data-i18n="g2">Scansiona il QR code</h3>
+          <p data-i18n="g2d">Inquadra il QR code con la fotocamera del telefono e conferma la connessione alla rete di iSugar. In alternativa, apri le impostazioni Wi‑Fi del telefono e collegati manualmente alla rete mostrata sullo schermo, con la password indicata.</p>
+          <div class="media"><img src="img/qr.jpg" alt="Scansione del QR code di configurazione con lo smartphone" loading="lazy"></div>
+        </div>
+      </div>
+
+      <div class="gstep">
+        <div class="gnum">3</div>
+        <div>
+          <h3 data-i18n="g3">Apri la pagina di configurazione</h3>
+          <p data-i18n="g3d">Di solito si apre da sola. Se non succede entro qualche secondo, apri il browser del telefono e scrivi <code>192.168.4.1</code> nella barra degli indirizzi.</p>
+          <div class="callout" data-i18n="g3n">📱 Se il telefono avvisa "questa rete non ha accesso a Internet", scegli <b>Rimani connesso</b>. È normale: la rete serve solo per parlare con iSugar.</div>
+        </div>
+      </div>
+
+      <div class="gstep">
+        <div class="gnum">4</div>
+        <div>
+          <h3 data-i18n="g4">Scegli un nickname</h3>
+          <p data-i18n="g4d">È il nome che comparirà in alto sul display, ad esempio il nome della persona che porta il sensore.</p>
+        </div>
+      </div>
+
+      <div class="gstep">
+        <div class="gnum">5</div>
+        <div>
+          <h3 data-i18n="g5">Collega il Wi‑Fi di casa</h3>
+          <p data-i18n="g5d">Seleziona la tua rete (a 2,4 GHz) e inserisci la password. Attenzione a maiuscole e minuscole.</p>
+        </div>
+      </div>
+
+      <div class="gstep">
+        <div class="gnum">6</div>
+        <div>
+          <h3 data-i18n="g6">Inserisci le credenziali LibreLinkUp</h3>
+          <p data-i18n="g6d">Email e password dell'account LibreLinkUp. iSugar le verifica subito: se sono corrette, la configurazione viene completata.</p>
+          <div class="callout warn-c" data-i18n="g6n">Se compare <b>"Credenziali errate o account inesistente"</b>, controlla di riuscire ad accedere all'app LibreLinkUp con gli stessi dati e di aver accettato l'invito.</div>
+        </div>
+      </div>
+
+      <div class="gstep">
+        <div class="gnum">7</div>
+        <div>
+          <h3 data-i18n="g7">Fatto!</h3>
+          <p data-i18n="g7d">iSugar si collega alla rete di casa e dopo pochi istanti mostra il valore. Il telefono torna automaticamente sulla tua rete Wi‑Fi. Da qui in poi basta tenerlo alimentato: alla riaccensione si ricollega da solo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISPLAY -->
+    <section id="display">
+      <h2 data-i18n="d_title">Leggere il display</h2>
+      <div class="media" style="max-width:520px;margin-bottom:18px"><img src="img/display.jpg" alt="Schermata principale di iSugar" style="border-radius:16px;box-shadow:var(--shadow)" loading="lazy"></div>
+      <ol class="substeps">
+        <li data-i18n="d1"><b>Valore attuale</b> in mg/dL, in grande al centro.</li>
+        <li data-i18n="d2"><b>Freccia e variazione</b>: indicano se il valore sta salendo, scendendo o è stabile.</li>
+        <li data-i18n="d3"><b>Stato</b>: "In range" quando il valore è nell'intervallo previsto.</li>
+        <li data-i18n="d4"><b>Ultimo aggiornamento</b>: l'orario dell'ultima lettura ricevuta. Se è vecchio, vedi "Problemi comuni".</li>
+        <li data-i18n="d5"><b>Grafico</b>: l'andamento delle ultime 24 ore.</li>
+        <li data-i18n="d6"><b>Ingranaggio</b> in alto a destra: apre le impostazioni.</li>
+      </ol>
+    </section>
+
+    <!-- PROBLEMI -->
+    <section id="problemi">
+      <h2 data-i18n="pr_title">Problemi comuni</h2>
+      <div class="faq">
+        <details><summary data-i18n="pr1">La pagina di configurazione non si apre</summary><div><p data-i18n="pr1a">Verifica di essere connesso alla rete di iSugar, poi apri il browser e vai su <code>192.168.4.1</code>. Se ancora non si apre, disattiva temporaneamente i dati mobili e riprova.</p></div></details>
+        <details><summary data-i18n="pr2">"Credenziali errate o account inesistente"</summary><div><p data-i18n="pr2a">Apri l'app LibreLinkUp e prova ad accedere con la stessa email e password. Se non funziona lì, recupera la password dall'app. Assicurati anche di aver accettato l'invito di condivisione.</p></div></details>
+        <details><summary data-i18n="pr3">iSugar non si collega al Wi‑Fi</summary><div><p data-i18n="pr3a">Controlla che la rete sia a 2,4 GHz e che la password sia corretta. Avvicina iSugar al router per la prima connessione. Se hai sbagliato la password, ripeti la configurazione (vedi sotto).</p></div></details>
+        <details><summary data-i18n="pr4">Il valore non si aggiorna</summary><div><p data-i18n="pr4a">Controlla l'orario di "Ultimo aggiornamento". Verifica che l'app ufficiale sul telefono di chi porta il sensore stia ricevendo i dati e che il Wi‑Fi di casa funzioni. Se il sensore è appena stato cambiato, attendi la fine del periodo di avvio.</p></div></details>
+        <details><summary data-i18n="pr5">Lo schermo è spento</summary><div><p data-i18n="pr5a">iSugar non ha batteria: controlla il cavo e prova un'altra presa USB o un altro alimentatore da 5V.</p></div></details>
+        <details><summary data-i18n="pr6">Voglio cambiare rete Wi‑Fi o account</summary><div><p data-i18n="pr6a">Tocca l'ingranaggio, apri le impostazioni ed esegui il <b>ripristino di fabbrica</b>. iSugar cancella i dati salvati e riparte in modalità configurazione: ripeti i passaggi dal punto 1.</p></div></details>
+      </div>
+      <div class="callout" style="margin-top:20px" data-i18n="pr_help">Non hai risolto? Scrivi a <a href="mailto:isugar.support@gmail.com"><b>isugar.support@gmail.com</b></a> indicando il problema e cosa compare sullo schermo.</div>
+    </section>
+
+    <!-- SICUREZZA -->
+    <section id="sicurezza">
+      <h2 data-i18n="sec_title">Sicurezza e privacy</h2>
+      <div class="warn">
+        <ul>
+          <li data-i18n="w1">iSugar <b>non è un dispositivo medico</b> né un presidio medico-chirurgico certificato.</li>
+          <li data-i18n="w3"><b>Prima di qualsiasi decisione terapeutica</b> (es. somministrazione di insulina) conferma sempre il valore con l'app ufficiale.</li>
+          <li data-i18n="w4">iSugar <b>non ha un sistema di allarmi</b>.</li>
+          <li data-i18n="sec4">Nickname, rete Wi‑Fi e credenziali restano salvati solo sul dispositivo. Il ripristino di fabbrica li cancella in modo definitivo.</li>
+        </ul>
+        <small data-i18n="tm">*FreeStyle Libre è un marchio registrato di Abbott. iSugar è un dispositivo indipendente compatibile, non prodotto né approvato da Abbott.</small>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a href="index.html" class="logo" style="font-size:20px">iSugar</a>
+      <p class="fine" data-i18n="foot">© 2026 iSugar · Progettato e prodotto in Italia. Non è un dispositivo medico.</p>
+    </div>
+    <nav>
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="tos.html" data-i18n="nav_tos">Termini di servizio</a>
+      <a href="mailto:isugar.support@gmail.com" data-i18n="nav_contact">Contatti</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="btn btn-primary" href="mailto:isugar.support@gmail.com" data-i18n="sticky_help">Assistenza</a>
+  <a class="btn btn-ghost" data-wa href="#">WhatsApp</a>
+</div>
+
+<script src="site.js"></script>
+</body>
+</html>
